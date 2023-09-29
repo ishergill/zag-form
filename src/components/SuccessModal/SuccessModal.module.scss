@@ -1,0 +1,82 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .successModal {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+
+    .iconContainer {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+
+      img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+
+    .successHeading {
+      color: #4381FF;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 20px;
+      /* 125% */
+      letter-spacing: -0.32px;
+    }
+
+    .successText {
+      margin-bottom: 20px;
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+      color: #000;
+      font-size: 17px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+    }
+
+    .buttonsContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      button {
+        border: none;
+        padding: 14px 20px;
+        border-radius: 30px;
+        cursor: pointer;
+        font-size: 1rem;
+        font-weight: bold;
+        margin: 0 10px;
+        width: 150px;
+        width: 94%;
+        font-weight: 500;
+      }
+
+      .goToEntriesButton {
+        background-color: #3062C8;
+        color: #fff;
+        margin-bottom: 1rem;
+      }
+
+      .cancelButton {
+        background-color: #E9F0FF;
+        color: #007bff;
+      }
+    }
+  }
+}
